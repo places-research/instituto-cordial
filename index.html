@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Relationships among urban characteristics, real estate market and spatial patterns of warehouses in different geographic contexts</title>
+    <meta charset="utf-8" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link href="libs/font-awesome/css/all.css" rel="stylesheet" />
+    <link href="libs/font-awesome/css/v4-shims.css" rel="stylesheet" />
+    <link href="libs/panelset/panelset.css" rel="stylesheet" />
+    <script src="libs/panelset/panelset.js"></script>
+    <script src="libs/htmlwidgets/htmlwidgets.js"></script>
+    <script src="libs/plotly-binding/plotly.js"></script>
+    <script src="libs/typedarray/typedarray.min.js"></script>
+    <script src="libs/jquery/jquery.min.js"></script>
+    <link href="libs/crosstalk/css/crosstalk.css" rel="stylesheet" />
+    <script src="libs/crosstalk/js/crosstalk.min.js"></script>
+    <link href="libs/plotly-htmlwidgets-css/plotly-htmlwidgets.css" rel="stylesheet" />
+    <script src="libs/plotly-main/plotly-latest.min.js"></script>
+    <link rel="stylesheet" href="slides.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+
+
+
+
+layout: true
+  
+&lt;div class="my-footer"&gt;
+&lt;span&gt;
+&lt;a href="https://retaoliveira.space" target="_blank"&gt;Renata Oliveira&lt;/a&gt;
+&lt;/span&gt;
+&lt;/div&gt; 
+
+---
+
+
+
+
+name: xaringan-title
+class: left, middle
+background-image: url(img/log7.jpg)
+background-size: cover
+
+.larger[
+.yellow[
+Relações entre centralidades urbanas e a localização de armazéns
+]
+]
+
+.big[
+.off-white[
+Renata Oliveira
+
+
+Mesa-redonda "Logística Urbana nas Cidades Brasileiras: avanços, mudanças e desafios"  
+
+02/06/2022
+]]
+
+---
+
+# Autores
+
+&lt;img src="img/banner.png" width="90%" style="display: block; margin: auto;" /&gt;
+
+.center[
+.large[
+Renata Oliveira   
+Laetitia Dablanc   
+Matthieu Schorung     
+
+]
+]
+
+---
+
+# Hipóteses de pesquisa
+
+
+.large[
+**O espraiamento logístico é maior** nas cidades com um elevado diferencial do **preço da terra** entre **áreas centrais e suburbanas**.
+]
+
+.big[
+(Dablanc, L., 2019)
+]
+
+---
+
+# Hipóteses de pesquisa
+
+.large[
+A **localização de armazéns** está relacionada ao **preço praticado pelo mercado imobiliário** em locação de instalações logísticas.
+]
+
+.big[
+(Dablanc, L., 2019)
+]
+
+---
+
+# Desafios metodológicos
+
+.large[
+- **Compatibilização** de **métodos** e **dados** para **comparação** de contextos metropolitanos muito diversos
+- Coleta de **dados não estruturados**
+- Determinação de **centralidades urbanas** para análise da **localização de armazéns** e das **práticas do mercado imobiliário**
+]
+
+---
+
+&lt;img src="img/map.png" width="120%" style="display: block; margin: auto;" /&gt;
+
+---
+
+<div id="htmlwidget-1b4ff99564eb6e8884a5" style="width:105%;height:100%;" class="plotly html-widget"></div>
+<script type="application/json" data-for="htmlwidget-1b4ff99564eb6e8884a5">{"x":{"visdat":{"8ce04237376c":["function () ","plotlyVisDat"]},"cur_data":"8ce04237376c","attrs":{"8ce04237376c":{"color":["#736a6c"],"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":{},"y":{},"xend":{},"yend":{},"type":"scatter","mode":"lines","showlegend":false,"inherit":true},"8ce04237376c.1":{"color":["#EE576B"],"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":{},"y":{},"type":"scatter","mode":"markers","name":"Suburban","inherit":true},"8ce04237376c.2":{"color":["#245468"],"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":{},"y":{},"type":"scatter","mode":"markers","name":"Central","inherit":true}},"layout":{"margin":{"b":40,"l":65,"t":25,"r":10},"title":"","xaxis":{"domain":[0,1],"automargin":true,"title":"Average warehouse rent price (US$/m2/year)"},"yaxis":{"domain":[0,1],"automargin":true,"title":"Metropolitan area","autorange":"reversed","type":"category","categoryorder":"array","categoryarray":["paris","utrecht","boston","toronto","new york","los angeles","san francisco","washington","nashville","salt lake city","noord holland","denver","seattle","austin","charlotte","san diego","greenville","grand rapids","raleigh","las vegas","sao paulo","dallas","greensboro","vancouver","rochester","pittisburg","columbus","buffalo","louisville","orlando","tampa","atlanta","flevoland","kansas city","belo horizonte","albany","milwaukee","miami","virginia beach","gothemburg","philadelphia","cincinnati","chicago","birmingham","cleveland","dayton","phoenix","houston","detroit","indianapolis","tulsa","richmond","portland","saint louis","tucson","san antonio","new orleans","zuid holland"]},"hovermode":"closest","showlegend":true},"source":"A","config":{"showSendToCloud":false},"data":[{"x":[107.411361908801,200.066094282847,null,82.28,157.451879084967,null,110.144251084337,172.641105,null,109.192718828571,168.3350565,null,139.140160881942,194.104533150115,null,168.313819790528,219.969118026296,null,172.978505142857,223.192835647632,null,112.067927142857,160.974196190476,null,90.74052,126.87168,null,72.291024,107.744052,null,112.330004593466,146.745332748538,null,111.483726545455,145.602980092583,null,113.118309473684,146.562459244898,null,117.161526857143,142.952251764706,null,74.637576,100.264960421053,null,148.876664326531,174.156032470588,null,39.3087825,63.97404,null,62.9694,85.81599,null,92.1271764705882,114.67248,null,78.79248,99.951514,null,35.6908967782175,55.8567553200913,null,90.3315058803987,106.017948,null,48.54564,64.185732,null,129.4525284,145.05372648,null,51.085944,66.4976,null,78.1568914285714,92.914848,null,59.96376,73.8434863636364,null,60.13488,71.5727716363636,null,55.12962,65.09529,null,90.6615199285714,100.3947516,null,88.1053076129032,97.5127535064935,null,80.3842339591837,89.5502299354839,null,77.9759026016718,84.6242530345472,null,75.7624293333333,80.5399799037433,null,34.7809829559817,39.1397425683124,null,69.75072,72.173218,null,56.040075,58.104072,null,143.010845609143,144.855634285714,null,88.350912,88.4124205714286,null,0,0,null,98.6271582089552,98.4128919786096,null,68.9635526666667,68.456556,null,103.920797277413,102.785449047273,null,68.97033,66.6490933333333,null,62.7988884545455,60.1891503157895,null,54.1893751578947,50.4651467755102,null,105.051031865546,100.15759955501,null,104.168565642857,96.8761537714286,null,81.7646470224897,74.3807777142857,null,76.58586,68.649204,null,66.779856,58.7932242857143,null,101.17332,92.78568,null,117.657144,108.59844243318,null,83.78604,74.6918275324675,null,105.27192,86.744684,null,114.276006,95.6138660816327,null,96.876,67.2042651428571,null,108.39318304544,null],"y":["paris","paris",null,"utrecht","utrecht",null,"boston","boston",null,"toronto","toronto",null,"new york","new york",null,"los angeles","los angeles",null,"san francisco","san francisco",null,"washington","washington",null,"nashville","nashville",null,"salt lake city","salt lake city",null,"noord holland","noord holland",null,"denver","denver",null,"seattle","seattle",null,"austin","austin",null,"charlotte","charlotte",null,"san diego","san diego",null,"greenville","greenville",null,"grand rapids","grand rapids",null,"raleigh","raleigh",null,"las vegas","las vegas",null,"sao paulo","sao paulo",null,"dallas","dallas",null,"greensboro","greensboro",null,"vancouver","vancouver",null,"rochester","rochester",null,"pittisburg","pittisburg",null,"columbus","columbus",null,"buffalo","buffalo",null,"louisville","louisville",null,"orlando","orlando",null,"tampa","tampa",null,"atlanta","atlanta",null,"flevoland","flevoland",null,"kansas city","kansas city",null,"belo horizonte","belo horizonte",null,"albany","albany",null,"milwaukee","milwaukee",null,"miami","miami",null,"virginia beach","virginia beach",null,"gothemburg","gothemburg",null,"philadelphia","philadelphia",null,"cincinnati","cincinnati",null,"chicago","chicago",null,"birmingham","birmingham",null,"cleveland","cleveland",null,"dayton","dayton",null,"phoenix","phoenix",null,"houston","houston",null,"detroit","detroit",null,"indianapolis","indianapolis",null,"tulsa","tulsa",null,"richmond","richmond",null,"portland","portland",null,"saint louis","saint louis",null,"tucson","tucson",null,"san antonio","san antonio",null,"new orleans","new orleans",null,"zuid holland","zuid holland"],"type":"scatter","mode":"lines","showlegend":false,"marker":{"color":"rgba(115,106,108,1)","line":{"color":"rgba(115,106,108,1)"}},"textfont":{"color":"rgba(115,106,108,1)"},"error_y":{"color":"rgba(115,106,108,1)"},"error_x":{"color":"rgba(115,106,108,1)"},"line":{"color":"rgba(115,106,108,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[107.411361908801,82.28,110.144251084337,109.192718828571,139.140160881942,168.313819790528,172.978505142857,112.067927142857,90.74052,72.291024,112.330004593466,111.483726545455,113.118309473684,117.161526857143,74.637576,148.876664326531,39.3087825,62.9694,92.1271764705882,78.79248,35.6908967782175,90.3315058803987,48.54564,129.4525284,51.085944,78.1568914285714,59.96376,60.13488,55.12962,90.6615199285714,88.1053076129032,80.3842339591837,77.9759026016718,75.7624293333333,34.7809829559817,69.75072,56.040075,143.010845609143,88.350912,0,98.6271582089552,68.9635526666667,103.920797277413,68.97033,62.7988884545455,54.1893751578947,105.051031865546,104.168565642857,81.7646470224897,76.58586,66.779856,101.17332,117.657144,83.78604,105.27192,114.276006,96.876,108.39318304544],"y":["paris","utrecht","boston","toronto","new york","los angeles","san francisco","washington","nashville","salt lake city","noord holland","denver","seattle","austin","charlotte","san diego","greenville","grand rapids","raleigh","las vegas","sao paulo","dallas","greensboro","vancouver","rochester","pittisburg","columbus","buffalo","louisville","orlando","tampa","atlanta","flevoland","kansas city","belo horizonte","albany","milwaukee","miami","virginia beach","gothemburg","philadelphia","cincinnati","chicago","birmingham","cleveland","dayton","phoenix","houston","detroit","indianapolis","tulsa","richmond","portland","saint louis","tucson","san antonio","new orleans","zuid holland"],"type":"scatter","mode":"markers","name":"Suburban","marker":{"color":"rgba(238,87,107,1)","line":{"color":"rgba(238,87,107,1)"}},"textfont":{"color":"rgba(238,87,107,1)"},"error_y":{"color":"rgba(238,87,107,1)"},"error_x":{"color":"rgba(238,87,107,1)"},"line":{"color":"rgba(238,87,107,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[200.066094282847,157.451879084967,172.641105,168.3350565,194.104533150115,219.969118026296,223.192835647632,160.974196190476,126.87168,107.744052,146.745332748538,145.602980092583,146.562459244898,142.952251764706,100.264960421053,174.156032470588,63.97404,85.81599,114.67248,99.951514,55.8567553200913,106.017948,64.185732,145.05372648,66.4976,92.914848,73.8434863636364,71.5727716363636,65.09529,100.3947516,97.5127535064935,89.5502299354839,84.6242530345472,80.5399799037433,39.1397425683124,72.173218,58.104072,144.855634285714,88.4124205714286,0,98.4128919786096,68.456556,102.785449047273,66.6490933333333,60.1891503157895,50.4651467755102,100.15759955501,96.8761537714286,74.3807777142857,68.649204,58.7932242857143,92.78568,108.59844243318,74.6918275324675,86.744684,95.6138660816327,67.2042651428571],"y":["paris","utrecht","boston","toronto","new york","los angeles","san francisco","washington","nashville","salt lake city","noord holland","denver","seattle","austin","charlotte","san diego","greenville","grand rapids","raleigh","las vegas","sao paulo","dallas","greensboro","vancouver","rochester","pittisburg","columbus","buffalo","louisville","orlando","tampa","atlanta","flevoland","kansas city","belo horizonte","albany","milwaukee","miami","virginia beach","gothemburg","philadelphia","cincinnati","chicago","birmingham","cleveland","dayton","phoenix","houston","detroit","indianapolis","tulsa","richmond","portland","saint louis","tucson","san antonio","new orleans"],"type":"scatter","mode":"markers","name":"Central","marker":{"color":"rgba(36,84,104,1)","line":{"color":"rgba(36,84,104,1)"}},"textfont":{"color":"rgba(36,84,104,1)"},"error_y":{"color":"rgba(36,84,104,1)"},"error_x":{"color":"rgba(36,84,104,1)"},"line":{"color":"rgba(36,84,104,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+
+---
+
+# Resultados
+
+.large[
+.pull-left[
+&lt;img src="img/paris.png" width="120%" style="display: block; margin: auto;" /&gt;
+]
+
+.pull-right[
+&lt;img src="img/ny.png" width="120%" style="display: block; margin: auto;" /&gt;
+]]
+
+---
+
+# Resultados
+
+- Classificar as áreas metropolitanas em uma **tipologia** para realizar estudos **comparativos**; 
+- A **localização** e os **preços de locação dos armazéns** estão relacionados à **densidade da atividade urbana**;
+- O **espraiamento logístico** **não está** significativamente **relacionado** com o **diferencial nos preços locação de armazéns** em **áreas centrais** e **suburbanas**, mas existem grandes diferenças entre diferentes categorias de regiões metropolitanas. 
+
+???
+
+
+- Há evidências estatisticamente significativas de que a localização dos armazéns e os preços médios de aluguel não são independentes.
+
+- Considerando todas as regiões metropolitanas, identificamos que o diferencial de valores locação nas áreas central e suburbana não está relacionada ao espraiamento logístico anual. 
+
+Regarding the first hypothesis, which aimed at investigating whether warehouse rent prices were higher in more central places within metropolitan areas, we can state that there is statistically significant evidence that the location of warehouses and average rent prices are not independent. 
+We explore the correlation between the differential of rent values in central and suburban areas; and yearly logistics sprawl (second hypothesis). Considering all metropolitan regions, we identify that the null hypothesis (the relationship is not significant) cannot be rejected
+
+Nevertheless, since the metropolitan areas are significantly different in many dimensions, this statement cannot be generalized when we gather them into more similar groups. 
+
+Finally, we conclude that: (i) it is essential to classify metropolitan areas into a typology to perform comparative studies; (ii) warehouse location and prices are related to the density of urban activity; (iii) logistics sprawl is not significantly related to the differential in warehouse rental prices in central and suburban areas, but there are major differences among metropolitan categories. 
+
+
+---
+
+# Contribuições da pesquisa
+
+.bigger[
+**Metodológica:** estrutura inovadora para comparar regiões metropolitanas considerando o padrão espacial das instalações logísticas e as características urbanas. 
+
+**Reprodutibilidade**
+
+**Política pública:** Pode induzir as autoridades públicas locais e regionais ao planejamento integrado.
+]
+
+???
+
+a desenvolver políticas públicas mais eficazes voltadas para o uso do solo e o planejamento do transporte orientadas à DUM. A coordenação destas dimensões é essencial para apoiar as necessidades de soluções de logística urbana, de habitabilidade das cidades, de qualidade de vida, do acesso equitativo a bens de consumo e do mercado imobiliário. 
+---
+
+# Referências
+
+.midi[
+  
+[1]	L. Dablanc, D. Rakotonarivo, The impacts of logistics sprawl: How does the location of parcel transport terminals affect the energy efficiency of goods’ movements in Paris and what can we do about it?, Procedia - Soc. Behav. Sci. 2 (2010) 6087–6096. https://doi.org/10.1016/j.sbspro.2010.04.021.
+[2]	L. Dablanc, S. Ogilvie, A. Goodchild, Logistics sprawl, Transp. Res. Rec. 2410 (2014) 105–112. https://doi.org/10.3141/2410-12.   
+[3]	L. Dablanc, M. Browne, Introduction to special section on logistics sprawl, J. Transp. Geogr. (2019) 0–1. https://doi.org/10.1016/j.jtrangeo.2019.01.010.   
+[4]	A. Heitz, L. Dablanc, L.A. Tavasszy, Logistics sprawl in monocentric and polycentric metropolitan areas: the cases of Paris, France, and the Randstad, the Netherlands, REGION. 4 (2017) 93. https://doi.org/10.18335/region.v4i1.158.   
+[5]	J. Cidell, Concentration and decentralization: The new geography of freight distribution in US metropolitan areas, J. Transp. Geogr. 18 (2010) 363–371. https://doi.org/10.1016/j.jtrangeo.2009.06.017.   
+[6]	T. Sakai, A. Beziat, A. Heitz, Location factors for logistics facilities: Location choice modeling considering activity categories, J. Transp. Geogr. 85 (2020) 102710. https://doi.org/10.1016/j.jtrangeo.2020.102710.   
+[7]	OpenStreetMap contributors, Planet dump retrieved from https://planet.osm.org , (2017).   
+[8]	S. Shekhar, H. Xiong, Local Indicators of Spatial Association Statistics, Encycl. GIS. 116 (2008) 615–615. https://doi.org/10.1007/978-0-387-35973-1_701. ]
+---
+
+# Referências
+
+.midi[
+[9]	A. Luc, Spatial econometrics: methods and models, Kluwer Academic., Dordrecht, 1988.   
+[10]	R.H.M. Pereira, V. Nadalin, L. Monasterio, P.H.M. Albuquerque, Urban Centrality: A Simple Index, Geogr. Anal. 45 (2013) 77–89. https://doi.org/10.1111/gean.12002.   
+[11]	A. Regal, J. Gonzalez-Feliu, M. Rodriguez, M. Juganaru-Mathieu, Defining urban logistics profile zones in South American metropolis by combining functional and spatial clustering techniques, 2019 Int. Conf. Control. Autom. Diagnosis, ICCAD 2019 - Proc. (2019) 1–6. https://doi.org/10.1109/ICCAD46983.2019.9037890.   
+[12]	Y. Wang, C. Hao, D. Liu, The spatial and temporal dimensions of the interdependence between the airline industry and the Chinese economy, J. Transp. Geogr. 74 (2019) 201–210. https://doi.org/10.1016/j.jtrangeo.2018.11.020.   
+]
+
+
+---
+
+class: middle, inverse
+
+.pull-left[
+&lt;img src="img/reta_atual.jpeg" width="55%" style="display: block; margin: auto;" /&gt;
+]
+
+
+.pull-right[
+.larger[
+.center[
+Obrigada!
+]]
+]
+
+&lt;hr /&gt;
+
+&amp;nbsp;
+
+&lt;p style="text-align: center;"&gt;&lt;span style="color: #ebdb00;"&gt;&lt;em&gt;renataoliveira@gmail.com&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;!-- Add icon library --&gt;
+&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"&gt;
+
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"&gt;
+
+
+&lt;!-- Add font awesome icons --&gt;
+&lt;p style="text-align: center;"&gt;
+    &lt;a href="https://twitter.com/retaoliveira?lang=en" class="fa fa-twitter fa-2x"&gt;&lt;/a&gt;&amp;nbsp;&amp;nbsp;
+    &lt;a href="https://github.com/retaoliveira" class="fa fa-github fa-2x"&gt;&lt;/a&gt;&amp;nbsp;&amp;nbsp;
+    &lt;a href="https://scholar.google.com/citations?user=V6EX45EAAAAJ" class="ai ai-google-scholar ai-2x"&gt;&lt;/a&gt;&amp;nbsp;&amp;nbsp;
+    &lt;a href="https://orcid.org/0000-0002-9011-2342" class="ai ai-orcid ai-2x"&gt;&lt;/a&gt;&amp;nbsp;&amp;nbsp;
+    &lt;a href="http://lattes.cnpq.br/2642488704355833" class="ai ai-lattes ai-2x"&gt;&lt;/a&gt;&amp;nbsp;&amp;nbsp;
+    &lt;a href="https://github.com/retaoliveira/relements/raw/main/texto/index.pdf" class="ai ai-cv ai-2x"&gt;&lt;/a&gt;
+
+&lt;/p&gt;
+
+&amp;nbsp;
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "16:9",
+"slideNumberFormat": "<div class=\"progress-bar-container\">\n  <div class=\"progress-bar\" style=\"width: calc(%current% / %total% * 100%);\">\n  </div>\n</div>\n"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
