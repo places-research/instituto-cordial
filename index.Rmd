@@ -125,13 +125,13 @@ espraia
 
 .large[
 .pull-left[
-```{r echo=FALSE, message=FALSE, warning=FALSE, out.width="120%", fig.align='center'}
+```{r echo=FALSE, message=FALSE, warning=FALSE, out.width="100%", fig.align='center'}
 knitr::include_graphics("img/paris.png")
 ```
 ]
 
 .pull-right[
-```{r echo=FALSE, message=FALSE, warning=FALSE, out.width="120%", fig.align='center'}
+```{r echo=FALSE, message=FALSE, warning=FALSE, out.width="100%", fig.align='center'}
 knitr::include_graphics("img/ny.png")
 ```
 ]]
